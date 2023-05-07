@@ -4,39 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <source src="jquery.js" type="">
-    <source src="script.js" type="">
+    <script src="jquery.js"></script>
+  <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
-    <h2 id="header-text">Salary Calculator</h2>
+   
 </head>
 <body>
+    <header>
+        <h2 id="header-text">Salary Calculator</h2>
+    </header>
+    <main>
+        <section>
     <h1>Add Employee</h1>
+    <form id="form-input">
+        <input
+        placeholder="First Name"
+        type="text"
+        id="name-input"
+        >
+        <input
+        placeholder="Lastname"
+        type="text"
+        id="lastname-input"
+        >
+        <input
+        placeholder="ID"
+        type="text"
+        id="id-input"
+        >
+        <input
+        placeholder="Title"
+        type="text"
+        id="title-input"
+        >
+        <input
+        placeholder="Annual Salary"
+        type="text"
+        id="salary-input"
+        >
+        <button id="submit-btn">Submit</button>
 
-<form id="form-input">
-    <input type="text"
-    placeholder="First Name"
-    id="name-input"
-    >
-    <input type="text"
-    placeholder="Lastname"
-    id="lastname-input"
-    >
-    <input type="text" 
-    placeholder="ID" 
-    id="id-input"
-    >
-    <input type="text" 
-    placeholder="Title" 
-    id="title-input">
-    >
-    <input type="text"
-    placeholder="Annual Salary"
-    id="salary-input"
-    >
-    <button id="submit-btn">Submit</button>
-    <div id="inputContainer"></div>
-</form>
+
+    </form>
+</section>
 
     <section>
         <h3>Employees</h3>
@@ -53,11 +64,18 @@
                 </tr>
             </thead>
             <tbody id="table-input">
+                
 
             </tbody>
+            <tr>
+                <th></th>
+            </tr>
         </table>
     </section>
+    <h3>Total Monthly Salary: <span id="total-monthly">0</span></h3>
+</main>
 
     
 </body>
+
 </html>
