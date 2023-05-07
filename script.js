@@ -22,8 +22,8 @@ console.log('insubmit');
     console.log('name:',nameInput,'lastname:',lastnameInput,'id',idInput,'title:',titleInput,'Annual Salary:',salaryInput);
 
     $('#table-input').append(`<tr><td>${nameInput}</td><td>${lastnameInput}</td><td>${idInput}</td><td>${titleInput}</td><td>${salaryInput}</td><td><button class="delete-btn">Delete</button></td></tr>`);
-    let MonthlySalary = (salaryInput/12);
-    MonthlySalary++;
+  //let MonthlySalary = (salaryInput/12);
+    MonthlySalary+=Math.round(salaryInput/12)
     $('#total-monthly').text(MonthlySalary);
 }
 function handleDelete() {
