@@ -25,7 +25,12 @@ console.log('insubmit');
   //let MonthlySalary = (salaryInput/12);
     MonthlySalary+=Math.round(salaryInput/12)
     $('#total-monthly').text(MonthlySalary);
+    if(MonthlySalary>20000){
+        $('#month-css').css('background-color', 'red');
+    }
 }
+
+
 function handleDelete() {
     $(this).parent().parent().remove();
     
