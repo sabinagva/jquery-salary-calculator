@@ -28,6 +28,10 @@ console.log('insubmit');
     if(MonthlySalary>20000){
         $('#month-css').css('background-color', 'red');
     }
+    else if(MonthlySalary<20000){
+        $$('#month-css').css('background-color', '');
+    }
+    
 }
 
 

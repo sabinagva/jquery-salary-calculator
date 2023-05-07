@@ -1,14 +1,16 @@
+
+  /* Header Decor */
 #header-text {
     text-align: center;
     color: aliceblue;
-    background-color: grey;
+    background-color: rgb(182, 90, 182);
     padding-top: 5%;
     height: 70px;
     width: 100%;
     
 }
   
-  /* TABLE */
+  /* TABLE Decor */
   table {
     width: 100%;
     text-align: left;
@@ -23,13 +25,13 @@
     min-width: 3.5em;
   }
   thead {
-    background: #7a7a7a;
+    background: #9822ff4e;
     color: #fcfcfc;
   }
   tbody tr:nth-child(odd){ 
     background: #fcfcfc;
   }
   tbody tr:nth-child(even){
-    background: #dcdcdc;
+    background: #b819a54e;
   }
   
